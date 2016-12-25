@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/camera_preview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MergeRootFrame" >
+
+    <ImageButton
+        android:id="@+id/recordButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="#00000000"
+        android:contentDescription="record"
+        android:onClick="startRecording"
+        android:src="@drawable/ic_menu_camera" />
+
+
+    <TextView
+        android:id="@+id/timer"
+        android:textColor="#ff0000"
+        android:textSize="19dp"
+        android:layout_marginTop="-210dp"
+        android:layout_gravity="center"
+        android:contentDescription="time"
+        android:text="00:00:00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageButton
+        android:id="@+id/stopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="#00000000"
+        android:contentDescription="stop"
+        android:onClick="stopRecording"
+        android:src="@drawable/ic_media_stop" />
+
+</FrameLayout>
